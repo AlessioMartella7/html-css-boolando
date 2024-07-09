@@ -1,0 +1,66 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body{
+    font-family: sans-serif;
+    color: #172026;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+/* utilities */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* header */
+
+header{
+    background-color: #FF6900;
+}
+
+.nav-bar{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color:#E7E7E7;
+}
+
+.size{
+    flex-basis: 20%;
+}
+
+.size a{
+    color:#E7E7E7;
+    font-weight: 600;
+    margin-right:5px;
+}
+
+.img-logo{
+    height: 50px;
+}
+
+.shop{
+    flex-basis: 20%;
+    text-align: right;
+}
+
+.shop i{
+    margin-right: 5px;
+}
