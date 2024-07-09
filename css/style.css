@@ -13,7 +13,10 @@ body{
 
 a{
     text-decoration: none;
+}
 
+h5{
+    font-weight: 200;
 }
 
 /* utilities */
@@ -25,15 +28,34 @@ a{
 .row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px dashed black;
+} 
+
+.col{
+    flex-basis: calc(100%/3 - 20px/3);
+    margin-bottom: 30px;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
 /* header */
 
 header{
     background-color: #FF6900;
+    box-shadow: 0 0 10px gray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 40px;
 }
 
 .nav-bar{
+    display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -63,4 +85,37 @@ header{
 
 .shop i{
     margin-right: 5px;
+}
+
+/* vetrina */
+
+.card{
+    position: relative;
+}
+
+.prices{
+    color:red ;
+    font-weight: 600;
+
+}
+
+.prices .price-down{
+    color: black;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.cuore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    
 }
