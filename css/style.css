@@ -19,6 +19,11 @@ h5{
     font-weight: 200;
 }
 
+h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* utilities */
 .container{
     max-width: 1000px;
@@ -30,7 +35,7 @@ h5{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    border: 1px dashed black;
+
 } 
 
 .col{
@@ -41,6 +46,11 @@ h5{
 img{
     max-width: 100%;
     display: block;
+}
+
+footer{
+    background-color: #1A1A1A;
+
 }
 /* header */
 
@@ -120,6 +130,13 @@ header{
     right: 0;
     
 }
+
+.cuore:hover{
+   
+    color: red;
+}
+
+
 .label{
     padding: 5px 10px;
     color: white;
@@ -134,12 +151,19 @@ header{
     
 }
 
-.label.sostenibility{
+.discount .label.sostenibility{
     position: absolute;
     left: 60px;
     top: 0;
     padding: 5px 10px;
     font-weight: 600;
+}
+
+div ~.label.sostenibility{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+
 }
 
 .bg-red{
@@ -151,6 +175,8 @@ header{
     background-color: #008000;
 }
 
+/* sovrapposizione imagine */
+
 .pictures{
   position: relative;
 }
@@ -159,7 +185,6 @@ header{
     display: none;
     
 }
-
 .card:hover .img-alt{
     display: inline-block;
     position: absolute;
@@ -168,4 +193,28 @@ header{
     left: 0;
     right: 0;
     
+}
+
+/* footer */
+
+.disclaimer{
+
+    min-height: 150px;
+  
+   
+}
+
+.info{
+    line-height: 150%;
+} 
+
+.info a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.social i{
+    margin: 10px 5px;
 }
